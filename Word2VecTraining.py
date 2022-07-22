@@ -49,7 +49,6 @@ model = Word2Vec(clean_data['parsed_article'],
                  negative=20,
                  sample=1e-5,
                  sg=1,
-                 compute_loss=True,
                  workers=n_cores-1,
                  compute_loss=True, 
                  callbacks=[callback()])
